@@ -1,28 +1,18 @@
 def main():
-    print("=== Simple AI Test Program ===")
+    print("=== DK AI Starter ===")
     
-    name = input("Nhập tên của bạn: ")
-    age = int(input("Nhập tuổi của bạn: "))
+    name = input("Tên của bạn: ")
+    goal = input("Mục tiêu của bạn là gì: ")
     
-    print(f"Xin chào {name}!")
+    print(f"\nChào {name}.")
+    print(f"Mục tiêu của bạn: {goal}")
     
-    if age < 18:
-        print("Bạn còn trẻ, cứ học thật chắc nền tảng.")
-    elif age < 23:
-        print("Đây là giai đoạn vàng để build skill và đi thực tập.")
+    if "AI" in goal.upper():
+        print("Tốt. Bạn đang đi đúng hướng.")
     else:
-        print("Tập trung tạo giá trị và kiếm tiền.")
+        print("Sai hướng rồi. Quay lại học AI.")
 
-    # mini logic AI giả lập
-    score = int(input("Nhập điểm của bạn (0-10): "))
-    
-    if score >= 8:
-        print("Bạn đang làm rất tốt.")
-    elif score >= 5:
-        print("Ổn, nhưng chưa đủ. Đẩy thêm.")
-    else:
-        print("Thẳng thắn: bạn đang yếu. Phải cày lại.")
-
+    print("\nCommit mỗi ngày. Không excuse.")
 
 if __name__ == "__main__":
     main()
