@@ -13,6 +13,15 @@ def main():
         print("Sai hướng rồi. Quay lại học AI.")
 
     print("\nCommit mỗi ngày. Không excuse.")
+    
+    hours = int(input("Bạn học AI bao nhiêu giờ mỗi ngày: "))
+
+    if hours < 2:
+        print("Quá ít. Bạn đang không nghiêm túc.")
+    elif hours <= 5:
+        print("Ổn. Nhưng chưa đủ để vượt người khác.")
+    else:
+        print("Tốt. Giữ kỷ luật này.")
 
 if __name__ == "__main__":
     main()
